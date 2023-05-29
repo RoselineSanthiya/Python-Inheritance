@@ -1,0 +1,29 @@
+ [79]: class first():
+    ...:     def method1a(self):
+    ...:         print('bee1')
+    ...:     def method2a(self):
+    ...:         print('bee2')
+    ...:
+
+In [80]: class second(first):
+    ...:     def method1b(self):
+    ...:         print('tom1')
+    ...:     def method2b(self):
+    ...:         print('tom2')
+    ...:
+
+In [81]: obj1=first()
+
+In [82]: obj2=second()
+
+In [83]: obj1.method1a()
+bee1
+
+In [84]: obj2.method1b()
+tom1
+
+In [85]: obj2.method2a()
+bee2
+
+In [86]: obj1.method2a()
+bee2
