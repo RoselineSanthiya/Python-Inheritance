@@ -1,35 +1,35 @@
- [79]: class first():
+ class first():
     ...:     def method1a(self):
     ...:         print('bee1')
     ...:     def method2a(self):
     ...:         print('bee2')
     ...:
 
-In [80]: class second(first):
+ class second(first):
     ...:     def method1b(self):
     ...:         print('tom1')
     ...:     def method2b(self):
     ...:         print('tom2')
     ...:
 
-In [81]: obj1=first()
+ obj1=first()
 
-In [82]: obj2=second()
+ obj2=second()
 
-In [83]: obj1.method1a()
+ obj1.method1a()
 bee1
 
-In [84]: obj2.method1b()
+ obj2.method1b()
 tom1
 
-In [85]: obj2.method2a()
+obj2.method2a()
 bee2
 
-In [86]: obj1.method2a()
+ obj1.method2a()
 bee2
 
 
-]: class flowers():
+ class flowers():
    ...:     def getflowersdetails(self,name,age):
    ...:         self.name=name
    ...:         self.age=age
@@ -38,7 +38,7 @@ bee2
    ...:         print('age=',self.age)
    ...:
 
-In [4]: class bees(flowers):
+ class bees(flowers):
    ...:     def getbeesdetails(self,city,state):
    ...:         self.city=city
    ...:         self.state=state
@@ -47,34 +47,30 @@ In [4]: class bees(flowers):
    ...:         print('state=',self.state)
    ...:
 
-In [5]: obj1=bees()
+ obj1=bees()
 
-In [6]: obj1.getflowersdetails('bee',5)
+ obj1.getflowersdetails('bee',5)
 
-In [7]: obj2=bees()
+ obj2=bees()
 
-In [8]: obj2.getbeesdetails('trichy','tn')
+ obj2.getbeesdetails('trichy','tn')
 
-In [9]: obj1.displayflowersdetails()
+ obj1.displayflowersdetails()
 name= bee
 age= 5
 
-In [10]: obj2.displaybeesdetails()
+ obj2.displaybeesdetails()
 city= trichy
 state= tn
 
-In [11]: obj1.name
-Out[11]: 'bee'
+ obj1.name
+ 'bee'
 
-In [12]: obj2.city
-Out[12]: 'trichy'
-
-In [13]:
+ obj2.city
+ 'trichy'
 
 
-
-
-In [13]: class flowers():
+ class flowers():
     ...:     def getflowersdetails(self,name,age):
     ...:         self.name=name
     ...:         self.age=age
@@ -83,7 +79,7 @@ In [13]: class flowers():
     ...:         print('age=',self.age)
     ...:
 
-In [14]: class bees(flowers):
+ class bees(flowers):
     ...:     def getbeesdetails(self,city,state):
     ...:         self.city=city
     ...:         self.state=state
@@ -92,26 +88,19 @@ In [14]: class bees(flowers):
     ...:         print('state=',self.state)
     ...:
 
-In [15]: be1=bees()
+ be1=bees()
 
-In [16]: fl1=flowers()
+ fl1=flowers()
 
-In [17]: be1.getflowersdetails('bee',5)
+ be1.getflowersdetails('bee',5)
 
-In [18]: fl1.getflowersdetails('bee'5)
-  Cell In[18], line 1
-    fl1.getflowersdetails('bee'5)
-                          ^
-SyntaxError: invalid syntax. Perhaps you forgot a comma?
+ fl1.getflowersdetails('bee',5)
+
+ fl1.age
+ 5
+
+ be1.name
+ 'bee'
 
 
-In [19]: fl1.getflowersdetails('bee',5)
-
-In [20]: fl1.age
-Out[20]: 5
-
-In [21]: be1.name
-Out[21]: 'bee'
-
-In [22]:
 
